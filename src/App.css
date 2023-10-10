@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  text-decoration: none;
+  color: #282c34;
+}
+
+#list-title {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.navbar {
+  margin: 1.3vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-list {
+  display:  flex;
+  gap: 3vw;
+  list-style-type: none;
+}
+
+.footerLemon {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 3vh;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.footer1 {
+  display: flex;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-logo {
+  max-width: 6vw;
+}
