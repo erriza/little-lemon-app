@@ -18,23 +18,18 @@ function Footer () {
                 <div className="footer2">
                     <ul className='footer-list'>
                         <li id='list-title'>Contact</li>
-                        <li>Nums</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Reservations</li>
-                        <li>Order Online</li>
-                        <li>Login</li>
+                        <li>Adress</li>
+                        <li>Phone Number</li>
+                        <li>Email</li>
                     </ul>
                 </div>
                 <div className="footer3">
                     <ul className='footer-list'>
                         <li id='list-title'>Social Media Links</li>
-                        <li>Nums</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Reservations</li>
-                        <li>Order Online</li>
-                        <li>Login</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>website</li>
                     </ul>
                 </div>
             </div>
