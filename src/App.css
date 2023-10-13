@@ -1,7 +1,6 @@
 /* app.css */
 html, body {
   height: 100%;
-  overflow: hidden;
 }
 
 a {
@@ -11,12 +10,13 @@ a {
 
 #list-title {
   font-weight: 700;
-  font-size: 1.1vw;
+  font-size: .6rem;
 }
 
-.navbar {
-  margin: 1.3vh;
+.desktop-navbar {
+  margin: 1.3ch;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -28,16 +28,17 @@ a {
 }
 
 .footerLemon {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 18vh;
   padding: 1vw;
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
   background-color: antiquewhite;
-  font-size: 1vw;
+  font-size: .5rem;
+  transition: bottom 0.3s; 
 }
 
 .footer1 {
@@ -50,16 +51,26 @@ a {
 }
 
 .footer-logo {
-  max-width: 4vw;
-  max-height: 10vh;
+  max-width: 7vw;
+  max-height: 12vh;
   margin: 2vh;
 }
 
 /* Adjust the media queries to work with the responsive hamburger menu */
 @media screen and (max-width: 768px) {
-  .navbar {
-    margin: 2vh;
+  .mobile-navbar {
+    margin: 1.3vw;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-main-logo {
+    height: 3vh;
+  }
+
+  .navbar-shopp-logo {
+    height: 3vh;
   }
 
   .navbar-list {
@@ -72,19 +83,21 @@ a {
   }
 
   .footer-logo {
-    max-width: 2vh;
-    max-height: 10vw;
+    max-width: 5vw;
+    max-height: 20vh;
   }
 
   .footerLemon {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 10vh;
     padding: 1vh;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
     font-size: 1.5vw;
+    transition: bottom 0.3s; 
+    z-index: -100;
   }
 }

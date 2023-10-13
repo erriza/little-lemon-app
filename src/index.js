@@ -2,13 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Footer from './Components/Footer';
+import Header from './Components/Header/Header';
+import Navigation from './Components/Navigation';
+
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
-    <App />
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<App/>}/>
+          <Route path="/header" element={<Header/>}/>
+          <Route path="/footer" element={<Footer/>}/>
+        </Routes>
+    </BrowserRouter>
   </ChakraProvider>
 );
 

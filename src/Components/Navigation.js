@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Logo from "./../assets/Logo.svg";
+import Shop from './../assets/shopp.svg'
 
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
@@ -34,45 +36,59 @@ function Navigation() {
 
   return (
     <div className="navbar">
-      <img src={Logo} alt="little lemon logo"></img>
 
       {/* Mobile Menu */}
-      {isMobileResolution && (
+      {isMobileResolution ? (
+        <div className="mobile-navbar">
           <Menu>
             <MenuButton as={IconButton} aria-label="Options" icon={<HamburgerIcon />} variant="outline" />
             <MenuList>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>About</MenuItem>
+              <MenuItem>
+                <Link to='/'>Home</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link to='/Footer'>About</Link>
+              </MenuItem>
               <MenuItem>Menu</MenuItem>
               <MenuItem>Reservations</MenuItem>
               <MenuItem>Order Online</MenuItem>
               <MenuItem>Login</MenuItem>
             </MenuList>
           </Menu>
+          <img src={Logo} className="navbar-main-logo" alt="little lemon logo"></img>
 
-      )}
-
-      {/* Desktop Menu */}
-      <ul className='navbar-list desktop-menu'>
-        <li>
-          <a href="#Home">Home</a>
-        </li>
-        <li>
-          <a href="#About">About</a>
-        </li>
-        <li>
-          <a href="#Menu">Menu</a>
-        </li>
-        <li>
-          <a href="#Reservations">Reservations</a>
-        </li>
-        <li>
-          <a href="#OrderOnline">Order Online</a>
-        </li>
-        <li>
-          <a href="#Login">Login</a>
-        </li>
-      </ul>
+          <img src={Shop} className="navbar-shopp-logo" alt="little lemon logo"></img>
+        </div>
+      ) : 
+      <div className="desktop-navbar">
+        <div>
+          <img src={Logo} className="navbar-main-logo" alt="little lemon logo"></img>
+        </div>
+        {/* Desktop Menu */}
+        <div>
+          <ul className='navbar-list desktop-menu'>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+            <Link to='/Footer'>About</Link>
+            </li>
+            <li>
+              <a href="#Menu">Menu</a>
+            </li>
+            <li>
+              <a href="#Reservations">Reservations</a>
+            </li>
+            <li>
+              <a href="#OrderOnline">Order Online</a>
+            </li>
+            <li>
+              <a href="#Login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      }
     </div>
   );
 }
