@@ -258,9 +258,9 @@ function BookingForm () {
           </form> 
         </Box> 
         <div>
-        <h3>Form Values</h3>
-        <pre>{JSON.stringify(formValues, null, 2)}</pre>
-      </div>
+          <h3>Form Values</h3>
+          <pre>{JSON.stringify(formValues, null, 2)}</pre>
+        </div>
       </VStack> 
         )}
 
