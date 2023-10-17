@@ -8,8 +8,13 @@
 .customers-title {
     color: #FFFFFF;
     font-family: 'Karla', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 2vw;
+}
+
+.card-footer {
+    align-items: center;
+    gap: .5em;
 }
 
 .customers-container {
@@ -17,6 +22,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.card-text {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+}
+
 /* Adjust the media queries to work with the mobile resolution */
 @media screen and (max-width: 480px) and (orientation : portrait) {
     .mainCustomers {

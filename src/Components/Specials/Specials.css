@@ -69,6 +69,20 @@
         font-size: .8rem;
         color: #495E57;
     }
+
+    
+@media only screen and (min-width:480px) and (orientation : landscape) {
+    .mainSpecial {
+        background-color: white;
+        width: 100%;
+        height: 90vh;
+        margin: 0;
+    }
+    .specials-container {
+        margin: 3.5vw;
+    }
+}
+
 /* Adjust the media queries to work with the mobile resolution */
 @media screen and (max-width: 480px) and (orientation : portrait) {
     .mainSpecial {

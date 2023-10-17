@@ -50,7 +50,9 @@ function Navigation() {
                 <Link to='/Footer'>About</Link>
               </MenuItem>
               <MenuItem>Menu</MenuItem>
-              <MenuItem>Reservations</MenuItem>
+              <MenuItem>
+                <Link to='/bookingPage'>Reservations</Link>
+              </MenuItem>
               <MenuItem>Order Online</MenuItem>
               <MenuItem>Login</MenuItem>
             </MenuList>
@@ -77,7 +79,7 @@ function Navigation() {
               <a href="#Menu">Menu</a>
             </li>
             <li>
-              <a href="#Reservations">Reservations</a>
+              <Link to='/bookingPage'>Reservations</Link>
             </li>
             <li>
               <a href="#OrderOnline">Order Online</a>

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Footer from './Components/Footer';
 import Header from './Components/Header/Header';
+import BookingPage from './Components/BookingPage/BookingPage';
 import Navigation from './Components/Navigation';
 
 import reportWebVitals from './reportWebVitals';
@@ -18,6 +19,7 @@ root.render(
           <Route path="/" element={<App/>}/>
           <Route path="/header" element={<Header/>}/>
           <Route path="/footer" element={<Footer/>}/>
+          <Route path='/bookingPage' element={<BookingPage/>}/>
         </Routes>
     </BrowserRouter>
   </ChakraProvider>
