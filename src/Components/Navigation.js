@@ -47,9 +47,11 @@ function Navigation() {
                 <Link to='/'>Home</Link>
               </MenuItem>
               <MenuItem>
-                <Link to='/Footer'>About</Link>
+                <Link to='/about'>About</Link>
               </MenuItem>
-              <MenuItem>Menu</MenuItem>
+              <MenuItem>
+                <Link to='/menu'>Menu</Link>
+              </MenuItem>
               <MenuItem>
                 <Link to='/bookingPage'>Reservations</Link>
               </MenuItem>
@@ -73,10 +75,10 @@ function Navigation() {
               <Link to='/'>Home</Link>
             </li>
             <li>
-            <Link to='/Footer'>About</Link>
+              <Link to='/about'>About</Link>
             </li>
             <li>
-              <a href="#Menu">Menu</a>
+              <Link to='/menu'>Menu</Link>
             </li>
             <li>
               <Link to='/bookingPage'>Reservations</Link>

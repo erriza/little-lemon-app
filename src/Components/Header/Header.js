@@ -15,7 +15,7 @@ function Header () {
                 </Link>
             </div>
             <div className='imgHeader'>
-                <img src={restaurantFood} className='restaurant-food' alt='image from food served in little lemon restaurant'/>
+                <img src={restaurantFood} className='restaurant-food' alt='food served in little lemon restaurant'/>
             </div>
         </div>
     )

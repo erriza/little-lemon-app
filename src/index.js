@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Footer from './Components/Footer';
 import Header from './Components/Header/Header';
-import BookingPage from './Components/BookingPage/BookingPage';
-import Navigation from './Components/Navigation';
 
+import BookingPage from './Components/BookingPage/BookingPage';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Specials from './Components/Specials/Specials';
+import Customers from './Components/Customers/Customers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +18,8 @@ root.render(
       <Routes>
           <Route path="/" element={<App/>}/>
           <Route path="/header" element={<Header/>}/>
-          <Route path="/footer" element={<Footer/>}/>
+          <Route path="/menu" element={<Specials/>}/>
+          <Route path='/about' element={<Customers/>}/>
           <Route path='/bookingPage' element={<BookingPage/>}/>
         </Routes>
     </BrowserRouter>
