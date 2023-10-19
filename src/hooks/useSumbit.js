@@ -16,13 +16,13 @@ const useSubmit = () => {
             }
             setResponse({
                 type: 'success',
-                message: 'Thanks for your submission, we will get back to you soon'
+                message: 'Thanks for your submission, we will get back to you soon, check your email ;)'
             })
         } catch (error) {
             setResponse({
                 type: 'error',
-                message: 'Something went wrong, please try again later'
-            })
+                message: 'Something went wrong, please try again later :('
+            })            
         } finally {
             setLoading(false)
         }

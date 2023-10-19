@@ -9,6 +9,7 @@ import {
     Button
    } from "@chakra-ui/react";
 import { ArrowBackIcon } from '@chakra-ui/icons'
+import Alert from '../Alert';
 
    
 
@@ -24,6 +25,7 @@ function BookingPage () {
                 </Heading>
             </Stack> 
             <BookingForm/>
+            <Alert></Alert>
         </div>
     )
 }
