@@ -18,10 +18,10 @@ function BookingPage () {
         <div>
             <Stack direction='row' spacing={4} p={4}>
                 <Link to='/'>
-                    <Button leftIcon={<ArrowBackIcon w={6} h={6} />} colorScheme='yellow' size='sm' variant='solid'/>
+                    <Button leftIcon={<ArrowBackIcon w={6} h={6} />} colorScheme='yellow' size='sm' variant='solid' aria-label='On Click'/>
                 </Link>
                 <Heading as="h1" id="contactme-section" className='booking-title'>
-                    Reservations 
+                    Book your reservation !
                 </Heading>
             </Stack> 
             <BookingForm/>

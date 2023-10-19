@@ -43,9 +43,9 @@ function BookingForm () {
         submit('https://someurl.com', values);
       }, 
       validationSchema: Yup.object({ 
-        firstName: Yup.string().required("Required"), 
-        email: Yup.string().email("Invalid email address").required("Required"), 
-        date: Yup.date().required("Required").default(() => new Date()),
+        firstName: Yup.string().required("Name Required"), 
+        email: Yup.string().email("Invalid email address").required("Email Required"), 
+        date: Yup.date().required("Date Required"),
         time: Yup.string().required(),
         number: Yup.number().positive().integer().min(1, 'At least one').max(10, 'Max is 10'),
         comment: Yup.string() 
@@ -94,7 +94,7 @@ function BookingForm () {
                   type="date" 
                   {...formik.getFieldProps("date")} 
                 /> 
-                <FormErrorMessage>{formik.errors.email}</FormErrorMessage> 
+                <FormErrorMessage>{formik.errors.date}</FormErrorMessage> 
               </FormControl>
               <FormControl> 
                 <FormLabel htmlFor="time">Choose time</FormLabel> 
@@ -138,7 +138,7 @@ function BookingForm () {
                 /> 
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage> 
               </FormControl> 
-              <Button type="submit" colorScheme="yellow" width="full" isLoading={isLoading}> 
+              <Button type="submit" colorScheme="yellow" width="full" isLoading={isLoading} aria-label='On Click'> 
                 Submit 
               </Button> 
             </VStack> 

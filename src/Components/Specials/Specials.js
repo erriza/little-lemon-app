@@ -12,10 +12,10 @@ function Specials () {
                     <h2>ORDER FOR DELIVERY!</h2>
                 </div>
                 <div className='buttons-container'>
-                    <button className='btn-special'>Lunch</button>
-                    <button className='btn-special'>Mains</button>
-                    <button className='btn-special'>Desserts</button>
-                    <button className='btn-special'>A La Carte</button>
+                    <button className='btn-special' aria-label='On Click'>Lunch</button>
+                    <button className='btn-special' aria-label='On Click'>Mains</button>
+                    <button className='btn-special' aria-label='On Click'>Desserts</button>
+                    <button className='btn-special' aria-label='On Click'>A La Carte</button>
                 </div>
                 <hr/>
                 <div className='specials-container'>

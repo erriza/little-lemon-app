@@ -15,17 +15,17 @@ import { AlertProvider } from './Components/context/alertContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AlertProvider>
-  <ChakraProvider>
-      <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<App/>}/>
-            <Route path="/header" element={<Header/>}/>
-            <Route path="/menu" element={<Specials/>}/>
-            <Route path='/about' element={<Customers/>}/>
-            <Route path='/bookingPage' element={<BookingPage/>}/>
-          </Routes>
-      </BrowserRouter>
-  </ChakraProvider>
+    <ChakraProvider>
+        <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<App/>}/>
+              <Route path="/header" element={<Header/>}/>
+              <Route path="/menu" element={<Specials/>}/>
+              <Route path='/about' element={<Customers/>}/>
+              <Route path='/bookingPage' element={<BookingPage/>}/>
+            </Routes>
+        </BrowserRouter>
+    </ChakraProvider>
   </AlertProvider>
 );
 
